@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(195, 197, 195);
+    font-family: 'Varela', sans-serif;
+    color: white;
+}
+/* nav-bar  */
+nav{
+    background-color: black;
+    color: white;
+    font-size:1.2rem;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+
+}
+.logo{
+    width: 30px;
+}
+.nav-bar li{
+    margin:4px 6px;
+}
+/* Songs-container */
+.container{
+    width: 80vw;
+    height: 76.5vh;
+    position: relative;
+    /* background-color: black; */
+    margin:0.4rem auto;
+    border-radius:1.5rem;
+    background-image:url(bg.jpg);
+    background-size:cover; 
+}
+/* inside container  */
+.title{
+    position: absolute;
+    top:1rem;
+    left:1rem;
+    
+}
+.songsList{
+    position: absolute;
+    top:5rem;
+    left:2rem;
+   display: flex;
+   flex-direction: column;
+   
+}
+.songs{
+    background-color: white;
+    color: black;
+    width:20rem;
+    height: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 2rem;
+    margin-bottom: 6px;
+    /* padding: 0 1rem; */
+}
+.songs i{
+    font-weight: 600;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.songs img{
+    width:2rem;
+    border-radius: 50%;
+    margin-top:0.2rem;
+    
+}
+/* footer section  */
+.footer{
+    position: absolute;
+    top: 85vh;
+    width: 100%;
+    height: 15vh;
+    background-color: black;
+}
+.footer input{
+    width:100%;
+    margin-top:1rem;
+}
+#myprogressBar{
+    cursor: pointer;
+}
+.play-button{
+    position: absolute;
+   margin-top: 5px;
+   top:2.1rem;
+  left: 50%;
+  transform: translate(-50%,0);
+  font-size: 2rem;
+  cursor:pointer;
+}
+.gif{
+    display: inline-block;
+    margin-left:2px;
+}
+.gif img{
+    width:50px;
+    
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+@media screen and (max-width:600) {
+    .title{
+        left:1vw;
+        /* font-size:1.1rem; */
+        font-size:1.5vw;
+    }
+    .songs{
+        width:10vw;
+        height: 1rem;
+        /* marginrem auto; */
+       
+        
+        /* padding: 0 1rem; */
+    }
+    .songsList{
+        position: absolute;
+        top:10rem;
+    }
+}
